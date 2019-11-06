@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+body {
+    background-color: #7F7303;
+}
+#sidebar {
+    background-color: black;
+    opacity: 0.8;
+    height: 100%;
+    width: 180px;
+    float: left;
+    position: fixed;
+    left: 0;
+}
+main {
+    float:left;
+}
+#my-container {
+    width: 800px;
+    margin: 25px 50%;
+    background-color: lightgrey;
+    height: 1000px;
+}
+footer {
+    background-color: #2B2B2B;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+}
