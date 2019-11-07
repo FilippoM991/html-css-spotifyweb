@@ -10,23 +10,27 @@
 }
 body {
     background-color: #7F7303;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden
 }
 #sidebar {
     background-color: black;
     opacity: 0.8;
-    height: 100%;
     width: 180px;
+    height: calc( 100vh - 72px);
     float: left;
-    position: fixed;
-    left: 0;
 }
 main {
-    float:left;
+    padding-left: 180px;
+    float: left;
+    overflow-y: scroll;
+    height: calc( 100vh - 80px);
+    width: calc( 100vw - 180px);
 }
 #my-container {
     width: 800px;
-    margin: 20px 50%;
-    height: 1000px;
+    margin: 20px auto;
 }
 #main-menu {
     text-align: center;
