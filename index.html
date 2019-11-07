@@ -4,14 +4,35 @@
         <meta charset="utf-8">
         <title>Spotify</title>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     </head>
     <body class="clearfix">
         <div id="sidebar">
-
+            <div id="sidebar-top">
+                <a id="logo-block" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Spotify_logo_with_text.svg/2000px-Spotify_logo_with_text.svg.png" alt="">
+                </a>
+                <a id="logo-hide" href="#"><i class="fab fa-spotify"></i>
+                </a>
+                <ul id="ul-block">
+                    <li><a href="#"><i class="fas fa-search"></i>Cerca</a>
+                    </li>
+                    <li><a href="#"><i class="fas fa-home"></i>Home</a>
+                    </li>
+                    <li><a href="#"><i class="fas fa-book"></i>La tua libreria</a>
+                    </li>
+                </ul>
+                <ul id="ul-hide">
+                    <li><a href="#"><i class="fas fa-search"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fas fa-home"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fas fa-book"></i></a>
+                    </li>
+                </ul>
+            </div>
         </div>
         <main>
             <div id="my-container">
@@ -30,6 +51,9 @@
                         <li><a href="#">Scopri</a>
                         </li>
                     </ul>
+                </div>
+                <div id="main-menu-hide">
+                    <a href="#"><i class="fas fa-bars"></i></a>
                 </div>
                 <div class="sezioni">
                     <h2>Creato per te</h2>
@@ -101,7 +125,22 @@
                 </div>
             </div>
         </main>
-        <footer></footer>
+        <footer>
+            <div>
+
+            </div>
+            <div id="song-button">
+                <a href="#"><i class="fas fa-backward"></i></a>
+                <a href="#"><i class="fas fa-play"></i></a>
+                <a href="#"><i class="fas fa-forward"></i></a>
+                <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
+            </div>
+            <div>
+
+            </div>
+        </footer>
 
     </body>
 </html>

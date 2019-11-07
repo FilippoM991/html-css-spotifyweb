@@ -22,11 +22,31 @@ body {
     float: left;
 }
 main {
-    padding-left: 180px;
     float: left;
     overflow-y: scroll;
     height: calc( 100vh - 80px);
     width: calc( 100vw - 180px);
+}
+
+#sidebar img {
+    width: 120px;
+    margin:20px;
+}
+#sidebar-top ul li {
+    padding: 8px 0 12px 20px;
+}
+#sidebar-top ul li:hover {
+    border-left: 2px solid #31C34D;
+}
+#sidebar-top ul a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+#sidebar-top ul a:hover {
+    color: white;
+}
+#sidebar-top ul i {
+    margin-right: 15px;
 }
 #my-container {
     width: 800px;
@@ -51,6 +71,10 @@ main {
     font-size: 12px;
 }
 #main-menu ul a:hover {
+    color: white;
+}
+#main-menu-hide a {
+    font-size: 28px;
     color: white;
 }
 .sezioni h2 {
@@ -99,4 +123,129 @@ footer {
     position: fixed;
     bottom: 0;
     z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+footer #song-button {
+    text-align: center;
+    width: 40%;
+}
+#song-button i {
+    color: lightgrey;
+    margin:0px 15px 18px 0;
+}
+.slidecontainer {
+  width: 100%;
+}
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 2px;
+  border-radius: 5px;
+  background:rgba(255, 255, 255, 0.3);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+@media screen and (min-width: 992px) {
+    #main-menu {
+        display: block;
+    }
+    #main-menu-hide {
+        display: none;
+    }
+}
+@media screen and (max-width: 991px) {
+    #my-container {
+        width: 90%;
+    }
+    .anteprime {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .artisti-e-playlist-cerchio {
+
+        margin: 30px 20px 30px 0;
+    }
+    .artisti-e-playlist-quadrato {
+
+        margin: 30px 20px 30px 0;
+    }
+    .anteprime p {
+        font-size: 16px;
+    }
+    #main-menu {
+        display: none;
+    }
+}
+@media screen and (min-width:492px) {
+    #logo-hide {
+        display: none;
+    }
+    #sidebar-top #ul-hide {
+        display: none;
+    }
+}
+@media screen and (max-width:491px) {
+    #sidebar {
+        width: 80px;
+    }
+    main {
+        width: calc( 100vw - 80px);
+    }
+    #logo-block {
+        display: none;
+    }
+    #logo-hide i {
+        font-size: 40px;
+        color: white;
+        padding: 20px;
+    }
+    #sidebar-top #ul-block{
+        display: none;
+    }
+
+    #ul-hide i  {
+        font-size: 25px;
+        text-align: center;
+    }
+    #sidebar-top #ul-hide li:hover {
+        border-left: 4px solid #31C34D;
+    }
+}
+@media screen and (max-width:391px) {
+    .artisti-e-playlist-cerchio {
+        width: 200px;
+        height: 200px;
+        margin: 30px 20px 30px 10px;
+    }
+    .artisti-e-playlist-quadrato {
+        width: 200px;
+        height: 200px;
+        margin: 30px 20px 30px 10px;
+    }
+    #main-menu-hide a {
+        font-size: 36px;
+    }
 }
