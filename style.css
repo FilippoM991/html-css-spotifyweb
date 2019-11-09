@@ -289,13 +289,13 @@ footer i {
 }
 @media screen and (max-width:391px) {
     .artisti-e-playlist-cerchio {
-        width: 200px;
-        height: 200px;
+        width: 78px;
+        height: 78px;
         margin: 30px 20px 30px 10px;
     }
     .artisti-e-playlist-quadrato {
-        width: 200px;
-        height: 200px;
+        width: 78px;
+        height: 78px;
         margin: 30px 20px 30px 10px;
     }
     #main-menu-hide a {
