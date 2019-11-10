@@ -20,6 +20,9 @@ body {
     width: 180px;
     height: calc( 100vh - 72px);
     float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 main {
     float: left;
@@ -27,13 +30,42 @@ main {
     height: calc( 100vh - 80px);
     width: calc( 100vw - 180px);
 }
+#sidebar-top {
+    flex-grow: 1;
+}
+#sidebar-bottom {
+    height: 80px;
+    padding:0 15px;
+}
+#sidebar-bottom i {
+    margin-right: 10px;
+}
+#install {
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+#utente {
+    font-size: 12px;
+}
+#install a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
 
+}
+#utente {
+    padding: 10px 0;
+}
+#utente a {
+    color:white;
+    text-decoration: none;
+}
 #sidebar img {
     width: 120px;
     margin:20px;
 }
 #sidebar-top ul li {
-    padding: 8px 0 12px 20px;
+    padding: 8px 0 4px 20px;
 }
 #sidebar-top ul li:hover {
     border-left: 2px solid #31C34D;
@@ -47,6 +79,19 @@ main {
 }
 #sidebar-top ul i {
     margin-right: 15px;
+}
+#ascoltati-di-recente {
+    color:rgba(255, 255, 255, 0.7);
+    padding: 15px;
+}
+#ascoltati-di-recente a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.4);
+    font-style: italic;
+}
+#ascoltati-di-recente p:first-child {
+    font-size: 14px;
+    color: white;
 }
 #my-container {
     width: 800px;
@@ -64,6 +109,7 @@ main {
     display: inline-block;
     margin: 0 2%;
 }
+
 #main-menu ul a {
     text-decoration: none;
     text-transform: uppercase;
@@ -129,6 +175,10 @@ footer {
 }
 #footer-left {
     display: flex;
+}
+#footer-left i {
+    margin-left: 12px;
+    margin-top: 22px;
 }
 footer p {
     color: white;
@@ -241,6 +291,13 @@ footer i {
         text-align: center;
         width: 60%;
     }
+    footer p {
+        font-size: 12px;
+    }
+    footer small {
+        font-size: 10px;
+
+    }
 }
 @media screen and (min-width:492px) {
     #logo-hide {
@@ -276,11 +333,23 @@ footer i {
         font-size: 25px;
         text-align: center;
     }
+    #ascoltati-di-recente {
+        display: none;
+    }
+    #sidebar-bottom span {
+        display: none;
+    }
+    #sidebar-bottom i {
+        font-size: 20px;
+    }
     #sidebar-top #ul-hide li:hover {
         border-left: 4px solid #31C34D;
     }
     #titolo-autore {
         display: none;
+    }
+    #footer-left i {
+        margin-left: 2px;
     }
     footer #song-button {
         text-align: center;
